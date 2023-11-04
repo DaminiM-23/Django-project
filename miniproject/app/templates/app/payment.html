@@ -1,0 +1,28 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Payment{% endblock title %}
+{% block main-content %}
+    <style>
+        h2 {text-align: center;}
+        h3 {text-align: center;}
+        div {text-align: center;}
+        h4 {text-align: center;}
+        h5 {text-align: center;}
+    </style>
+    <br>
+     <h2>Welcome <span class="text-capitalize">{{request.user}}</span></h2>
+     <br>
+     <h3>Scan this to make payment</h3>
+    <div>
+        <img src="{% static 'app/images/QR.png' %}" >
+    </div>
+    <h4>OR</h4>
+    <h3>Pay by using VPA : 9262341874@ybl</h3>
+    <br><br>
+    <h5>Thank you for Shopping with T_n_M's!!!!</h5>
+    <h5>Your order will be accepted once you make the payment.</h5>
+    <h5>kindly keep checking order's status.</h5>
+
+
+{% endblock main-content %}
+
